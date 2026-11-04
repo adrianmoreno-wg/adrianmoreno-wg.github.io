@@ -1,23 +1,64 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 5</title>
 </head>
+
 <body>
     <section>
         <h2>Seccion 1</h2>
         <h3>Tarea A</h3>
-        <iframe title="Video tutorial de HTML5" width="560" height="315" loading="lazy" src="https://youtu.be/EvKm8yhM7V8?si=8Pv1_gkYIHwf6YDD"></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/EvKm8yhM7V8?si=jfeG1Z5CaC30JAGF"
+            title="Video tutorial de html5" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+        encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen></iframe>
         <h3>Tarea B</h3>
-        <embed type="application/pdf" width="100%" height="500px" src="media/apuntes.pdf"/>
+        <embed type="application/pdf" width="100%" height="500px" src="media/apuntes.pdf" />
         <h3>Tarea C</h3>
-       <object type="text/html" data="https://www.wikipedia.org"></object>  
+        <object type="text/html" data="https://www.wikipedia.org"></object>
     </section>
+
     <section>
         <h2>Seccion 2</h2>
-        
+        <h3>Tarea A</h3>
+        <video controls>
+            <source src="media/muestra.mp4" type="video/mp4">
+            <source src="media/muestra.webm" type="video/webm">
+            Error: Tu navegador no soporta el tag de video.
+        </video>
+        <h3>Tarea B</h3>
+        <audio controls>
+            <source src="media/pista.mp3" type="audio/mpeg">
+            <source src="media/pista.ogg" type="audio/ogg">
+            Error: Tu navegador no soporta el tag de video.
+        </audio>
+    </section>
+
+    <section>
+        <h2>Seccion 3</h2>
+        <h3>Tarea A</h3>
+        <svg width="200" height="200">
+            <rect width="100%" height="100%" fill="blue" />
+            <circle cx="100" cy="100" r="50" fill="yellow" stroke="red" stroke-width="10" />
+        </svg>
+        <h3>tarea B</h3>
+        <canvas id="miLienzo" width="300" height="150">
+            Tu navegador no soporta el elemento Canvas
+            <script>
+                const canvas = document.getElementById('miLienzo');
+                const ctx = canvas.getContext('2d');
+                ctx.fillStyle = 'green';
+                ctx.fillRect(10, 10, 150, 80);
+                ctx.moveTo(0, 0);
+                ctx.lineTo(200, 100);
+                ctx.stroke(); 
+            </script>
+
+        </canvas>
     </section>
 </body>
+
 </html>
