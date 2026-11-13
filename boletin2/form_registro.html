@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Desarrolladores</title>
+</head>
+
+<body>
+    <form action="https://lm.ciclo.iesnervion.es/registro.php" method="post">
+        <p>Codigo de alumno</p>
+        <input type="text" id="codigo-alumno" name="codigo-alumno" maxlength="50" pattern="[A-Z] {3} [0-9] {3}"
+            required><br>
+        <p>Correo corporativo</p>
+        <input type="email" id="correo" name="correo" required><br>
+        <p>Edad</p>
+        <input type="number" id="edad" name="edad" min="16" max="65" required>
+        <p>Telefono de contacto</p>
+        <input type="tel" id="telefono" name="telefono" pattern="[0-9] {9}" required>
+        <p>Sitio web / Portfolio</p>
+        <input type="url" id="web" name="web" placeholder="Opcional"><br><br>
+        <label for="ide">IDE Preferido:</label><br>
+        <input list="ide-pref" id="ide" name="ide">
+        <datalist id="ide-pref">
+            <option value="IntelliJ IDEA">
+            <option value="Visual Studio Code">
+            <option value="Eclipse">
+            <option value="Android Studio">
+        </datalist>
+        <p>Aceptacion politica de privacidad</p>
+        <input type="checkbox" id="acuerdo" name="acuerdo" value="aceptar">
+        <label for="acuerdo">Acepto los terminos y condiciones</label>
+    </form>
+</body>
+
+</html>

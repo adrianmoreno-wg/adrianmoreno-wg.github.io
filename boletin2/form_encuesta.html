@@ -8,7 +8,7 @@
 <body>
     <form action="https://lm.ciclo.iesnervion.es/encuesta.php" method="post">
         <fieldset>
-            <legend><b>Datos Academicos</b></legend>
+            <legend><b><u>Datos Academicos</u></b></legend>
             <label for="nombreApellidos">Nombre y Apellidos:</label>
             <input type="text" id="nombreApellidos" name="nombreApellidos" maxlength="50" required><br>
             <label for="ciclo">Ciclo Formativo:</label>
@@ -19,9 +19,26 @@
             </select>
         </fieldset>
         <fieldset>
-            <legend><b>Preferencias Tencinas</b></legend>
-            <label></label>
+            <legend><b><u>Preferencias Tencinas</u></b></legend>
+            <p><b>Lenguaje de programacion</b></p>
+            <input type="radio" id="java" name="lenguaje" value="java">
+            <label for="java">Java</label><br>
+            <input type="radio" id="python" name="lenguaje" value="phyton">
+            <label for="phyton">Phyton</label><br>
+            <input type="radio" id="c#" name="lenguaje" value="c#">
+            <label for="c#">C#</label><br>
+            <input type="radio" id="javascript" name="lenguaje" value="javascript">
+            <label for="javascript">JavaScript</label><br>
+            <p><b>Entorno de desarrollo</b></p>
+            <input type="checkbox" id="entorno-windows" name="entorno-windows" value="windows">
+            <label for="entorno-windows">Windows</label>
+            <input type="checkbox" id="entorno-linux" name="entorno-linux" value="linux">
+            <label for="entorno-linux">Linux</label>
+            <input type="checkbox" id="entorno-macos" name="entorno-macos" value="macos">
+            <label for="entorno-macos">macOS</label>
         </fieldset>
+        <button type="reset">Restablecer</button><br>
+        <button type="submit">Enviar</button>
     </form>
 </body>
 </html>
