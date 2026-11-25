@@ -6,6 +6,27 @@
     <title>Inscripcion a Evento Tech</title>
 </head>
 <body>
-    
+    <form action="https://lm.ciclo.iesnervion.es/inscripcion.php" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend><b>Codigo de registro</b></legend>
+            <label for="codigo_registro">Codigo de registro</label>
+            <input type="text" id="codigo_registro" name="codigo_registro" value="HACK-2026-SEV" readonly><br>
+        </fieldset>
+        <fieldset>
+            <legend><b>Datos del equipo</b></legend>
+            <label for="equipo">Nombre del equipo</label>
+            <input type="text" name="equipo" id="equipo" autofocus><br>
+            <label for="fecha">Fecha de llegada</label>
+            <input type="date" id="fecha" name="fecha" min="2026-12-01" max="2026-12-15"><br>
+            <label for="hora">Hora de presentacion</label>
+            <input type="time" id="hora" name="hora"><br>
+            <label for="color">Color identificativo de la banda</label>
+            <input type="color" id="color" name="color"><br>
+            <label for="nivel_java">Nivel estimado de Java</label>
+            <input type="range" id="nivel_java" name="nivel_java" min="0" max="100" step="5"><br>
+            <label for="expediente">Subir Expediente / CV</label>
+            <input type="file" accept=".pdf">
+        </fieldset>
+    </form>
 </body>
 </html>
